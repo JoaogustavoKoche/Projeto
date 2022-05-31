@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <h1 class="titulo">Team Sign Up</h1>
+        <div class="subtitulo">
+        <button class="subtitulos">Basic</button>
+        <button class="subtitulos" >Socials</button>
+        <button class="subtitulos">Certificates</button>
+        </div>
+    </div>
+
+    <div class="container-form">
+        <form name="form">
+            <div class="container-input">
+                <label for="linkedIn">LinkedIn</label><br>
+                <input type="text" id="linkedIn" name="linkedIn" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"><br>
+            </div>
+            <div class="container-input">
+                <label for="github">Github *</label><br>
+                <input type="text" id="github" name="github" onclick="isURL()" placeholder="https://github.com/foobar" required><br><br>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-button">
+        <a href="www.google.com">
+            <button id="button">
+                Next <img src="arrow.png" alt="">
+            </button>
+        </a>
+    </div>
+
+    <script src="validar-url.js"></script>
+</body>
+</html>
