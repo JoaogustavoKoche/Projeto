@@ -1,0 +1,50 @@
+.container{
+    .form{
+        margin-top: 6%;
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.7em;
+        line-height: 20px;
+        color: #767676;
+        .input{
+            width: 92%;
+            height: 2em;
+            border: solid 2px #AAAAAA;
+            border-radius: 2px;
+            margin-bottom: 5%;
+            padding-left: 3%;
+        }
+    }
+
+    .button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 5%;
+        a{
+            text-decoration: none;
+
+            #button{
+                background: #074EE8;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 12px;
+                gap: 6px;
+                border-style: none;
+                padding: 10px 15px 10px 15px;
+                font-family: 'Nunito', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .errorInput{
+        border: 2px solid rgb(207, 53, 53) !important;
+    }
+}

@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Social</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1 class="titulo">Team Sign Up</h1>
+            <div class="subtitulo">
+                <button class="subtitulos">Basic</button>
+                <button class="subtitulos" >Social</button>
+                <button class="subtitulos">Certificates</button>
+            </div>
 
-
-    <div class="container">
-        <h1 class="titulo">Team Sign Up</h1>
-        <div class="subtitulo">
-        <button class="subtitulos">Basic</button>
-        <button class="subtitulos" >Socials</button>
-        <button class="subtitulos">Certificates</button>
+            <form name="form">
+                <fieldset class="form">
+                    <legend for="linkedIn">LinkedIn</legend>
+                    <input class="input" type="text" id="linkedIn" name="linkedIn" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                    <legend for="github">Github *</legend>
+                    <input class="input"type="text" id="github" name="github" onclick="isURL()" placeholder="https://github.com/foobar" required>
+                </fieldset>
+            </form>
+            
+        
+            <div class="button">
+                <a href="www.google.com">
+                    <button id="button"> Next
+                        <img src="svg/arrow.svg" alt="">
+                    </button>
+                </a>
+            </div>
         </div>
-    </div>
+        
+    </header>
 
-    <div class="container-form">
-        <form name="form">
-            <div class="container-input">
-                <label for="linkedIn">LinkedIn</label><br>
-                <input type="text" id="linkedIn" name="linkedIn" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/"><br>
-            </div>
-            <div class="container-input">
-                <label for="github">Github *</label><br>
-                <input type="text" id="github" name="github" onclick="isURL()" placeholder="https://github.com/foobar" required><br><br>
-            </div>
-        </form>
-    </div>
-
-    <div class="container-button">
-        <a href="www.google.com">
-            <button id="button">
-                Next <img src="arrow.png" alt="">
-            </button>
-        </a>
-    </div>
-
-    <script src="validar-url.js"></script>
+    <script src="js/validate-url.js"></script>
 </body>
 </html>

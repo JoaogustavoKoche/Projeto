@@ -1,0 +1,99 @@
+.container {
+  margin: 0 10%;
+}
+
+.container .titulo {
+  margin-top: 10%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.container .subtitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .subtitulos {
+  margin-top: 8%;
+  width: 100%;
+  background-color: #FFF;
+  border: none;
+  border-bottom: 2px solid #767676;
+  padding-bottom: 2%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+.container .subtitulos:active {
+  margin-top: 8%;
+  width: 100%;
+  border-color: #074EE8;
+  color: #074EE8;
+  border: none;
+  border-bottom: 3px solid;
+}
+
+.container .form {
+  margin-top: 6%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.7em;
+  line-height: 20px;
+  color: #767676;
+}
+
+.container .form .input {
+  width: 92%;
+  height: 2em;
+  border: solid 2px #AAAAAA;
+  border-radius: 2px;
+  margin-bottom: 5%;
+  padding-left: 3%;
+}
+
+.container .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 5%;
+}
+
+.container .button a {
+  text-decoration: none;
+}
+
+.container .button a #button {
+  background: #074EE8;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 12px;
+  gap: 6px;
+  border-style: none;
+  padding: 10px 15px 10px 15px;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.container .errorInput {
+  border: 2px solid #cf3535 !important;
+}
+/*# sourceMappingURL=style.css.map */
