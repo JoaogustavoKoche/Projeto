@@ -1,19 +1,20 @@
 .container{
-    margin: 0 10%;
+    margin: 0 8%;
 
-    .titulo{
+    .title{
         margin-top: 10%;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         font-size: 1em;
     }
 
-    .subtitulo{
+    .subtitles{
+        width: 100%;
         display: flex;
         justify-content: space-around;
     }
 
-    .subtitulos{
+    .subtitle{
         margin-top: 8%;
         width: 100%;
         background-color: #FFF;
@@ -22,14 +23,24 @@
         padding-bottom: 2%;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
+        font-size: 16px;
+        &:active{
+            margin-top: 8%;
+            width: 100%;
+            border-color: #074EE8;
+            color: #074EE8;
+            border: none;
+            border-bottom: 3px solid;
+        }
+        &.checked {
+            margin-top: 8%;
+            width: 100%;
+            border-color: #074EE8;
+            color: #074EE8;
+            border: none;
+            border-bottom: 3px solid;
+        }
     }
 
-    .subtitulos:active{
-        margin-top: 8%;
-        width: 100%;
-        border-color: #074EE8;
-        color: #074EE8;
-        border: none;
-        border-bottom: 3px solid;
-    }
+    
 }
