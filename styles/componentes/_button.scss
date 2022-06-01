@@ -1,0 +1,19 @@
+.container{
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            background-color: #074EE8;
+            height: 40px;
+            width: 81px;
+            padding: 0px 12px;
+            border: none;
+            border-radius: 4px;
+            color: #FFFFFF;
+            font-size: 16px;
+            img {
+                margin: 0 0 0 20%;
+            }
+        }
+    }
+}

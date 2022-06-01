@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social</title>
+    <title>SPA Project</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1 class="titulo">Team Sign Up</h1>
-            <div class="subtitulo">
-                <button class="subtitulos">Basic</button>
-                <button class="subtitulos" >Social</button>
-                <button class="subtitulos">Certificates</button>
+            <h1 class="title">Team Sign Up</h1>
+            <div class="subtitles">
+                <button class="subtitle checked">Basic</button>
+                <button class="subtitle">Socials</button>
+                <button class="subtitle">Certificates</button>
             </div>
-
             <form name="form">
                 <fieldset class="form">
-                    <legend for="linkedIn">LinkedIn</legend>
-                    <span  id="erroUrlLink" class="invisible">Invalid URL</span>
-                    <input class="input" type="text" id="linkedIn" name="linkedIn" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" onkeyup="saveValue(this)">
-                    <legend for="github">Github *</legend>
-                    <span id="erro-input" class="invisible">This is a required field!</span>
-                    <span id="erroUrlGit" class="invisible">Invalid URL</span>
-                    <input class="input"type="text" id="github" name="github" placeholder="https://github.com/foobar" required onkeyup="saveValue(this)">
+                    <legend for="fullname">Fullname *</legend>
+                    <input class="input" type="text" id="fullname" name="fullname" placeholder="Foo Bar" required>
+                    <legend for="nickname">Nickname</legend>
+                    <input class="input" type="text" id="nickname" name="nickname" placeholder="Juanito">
+                    <div class="contact">
+                        <legend for="email">Email *</legend>
+                        <input class="input" type="email" id="email" name="email" placeholder="foo@bar.com" required>
+                        <legend for="phone">Phone</legend>
+                        <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000">
+                    </div>
+                    <label class="label">Birthday *</label>
+                    <div class="birthday">
+                        <legend for="day">Day</legend>
+                        <select class="input" type="number" id="day" name="day"  required>
+                            <option>1</option>
+                        </select>
+                        <legend for="month">Month</legend>
+                        <select class="input" type="number" id="month" name="month" required>
+                            <option>1</option>
+                        </select>
+                        <legend for="year">Year</legend>
+                        <select class="input" type="number" id="year" name="year" required>
+                            <option>1991</option>
+                        </select>
+                        <legend for="age">Age</legend>
+                        <input class="input" type="text" readonly="readonly">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                    <legend for="checkbox">I accept the terms and privacy</legend>
+                    </div> 
                 </fieldset>
             </form>
-            
-        
+
+
             <div class="button">
-                <a href="www.google.com">
-                    <button id="button"> Next
-                        <img src="svg/arrow.svg" alt="">
-                    </button>
-                </a>
+                <button id="button">Next<img src="svg/arrow.svg"></i></button>
             </div>
         </div>
 
-        <div class="modal" id="modal">
-            <div class="modalContent">
-                <p>Are you sure you want to confirm?</p>
-                <div class="modalButtons">
-                    <a href="">
-                        <button id="modalCancel">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.5 4.5L4.5 13.5" stroke="#074EE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M4.5 4.5L13.5 13.5" stroke="#074EE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>  
-                            Cancel
-                        </button>
-                    </a>
-                    <a href="">
-                        <button id="modalConfirm">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 4.5L6.75 12.75L3 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            Confirm
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        
     </header>
-    
-    <script src="js/validate-url.js"></script>
-    <script src="js/storage.js"></script>
 </body>
+
 </html>

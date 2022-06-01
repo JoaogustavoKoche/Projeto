@@ -1,15 +1,16 @@
 .container {
-  margin: 0 10%;
+  margin: 0 8%;
 }
 
-.container .titulo {
+.container .title {
   margin-top: 10%;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1em;
 }
 
-.container .subtitulo {
+.container .subtitles {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +18,7 @@
       justify-content: space-around;
 }
 
-.container .subtitulos {
+.container .subtitle {
   margin-top: 8%;
   width: 100%;
   background-color: #FFF;
@@ -26,9 +27,19 @@
   padding-bottom: 2%;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
+  font-size: 16px;
 }
 
-.container .subtitulos:active {
+.container .subtitle:active {
+  margin-top: 8%;
+  width: 100%;
+  border-color: #074EE8;
+  color: #074EE8;
+  border: none;
+  border-bottom: 3px solid;
+}
+
+.container .subtitle.checked {
   margin-top: 8%;
   width: 100%;
   border-color: #074EE8;
@@ -38,6 +49,9 @@
 }
 
 .container .form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+          flex: 0 1;
   margin-top: 6%;
   font-family: 'Nunito', sans-serif;
   font-size: 0.7em;
@@ -46,33 +60,174 @@
 }
 
 .container .form .input {
-  width: 92%;
-  height: 2em;
+  outline-color: #BC31EA;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 40px;
   border: solid 2px #AAAAAA;
   border-radius: 2px;
   margin-bottom: 5%;
-  padding-left: 3%;
+  padding-left: 11px;
 }
 
-.container .form span {
-  color: #e63e3e;
-  font-size: 12px;
+.container .form .contact {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 93px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 5%;
+}
+
+.container .form .contact [type="email"] {
+  width: 63.61%;
+}
+
+.container .form .contact [type="tel"] {
+  width: 31.23%;
+}
+
+.container .form .label {
+  font-size: 16px;
+}
+
+.container .form .birthday {
+  margin-top: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 0 15.3%;
+  height: 70px;
+  width: 25%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.container .form .birthday * {
+  width: 88.7%;
+}
+
+.container .form .birthday select {
+  color: #767676;
+}
+
+.container .form .checkbox {
+  margin: 42px 0 50px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container .form .checkbox [type=checkbox] {
+  accent-color: #074EE8;
+  width: 20px;
+  height: 20px;
+}
+
+.container .form .checkbox legend {
+  margin-left: 8px;
 }
 
 .container .button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.container .button a {
-  text-decoration: none;
-}
-
-.container .button a #button {
-  background: #5d87e2;
+.container .button button {
+  background-color: #074EE8;
+  height: 40px;
+  width: 81px;
+  padding: 0px 12px;
+  border: none;
   border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.container .button button img {
+  margin: 0 0 0 20%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal .modalContent {
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  width: 70%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modalContent p {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.modal .modalContent .modalButtons {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,30 +235,64 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.modal .modalContent .modalButtons a {
+  text-decoration: none;
+  height: 40px;
+}
+
+.modal .modalContent .modalButtons button {
+  height: 40px;
+  width: 105px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: 'Nunito';
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 12px;
-  gap: 6px;
-  border-style: none;
-  padding: 10px 15px 10px 15px;
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .errorInput {
-  border: 2px solid #e63e3e !important;
+.modal .modalContent .modalButtons button svg {
+  margin-right: 6px;
 }
 
-.container .invisible {
-  display: none;
+.modal .modalContent .modalButtons #modalCancel {
+  background-color: white;
+  border: 2px solid #074EE8;
+  color: #074EE8;
+  text-decoration: none;
+}
+
+.modal .modalContent .modalButtons #modalConfirm {
+  background-color: #074EE8;
+  border: 2px solid #074EE8;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  .modal .modalContent {
+    margin-top: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  .modal .modalContent {
+    margin-top: 20%;
+    width: 40%;
+  }
 }
 
 .modal {
