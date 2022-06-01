@@ -33,11 +33,13 @@ function thirtyDaysMonth(){
 }
 
 
-//Chama as 3 funções para popular os campos de data ao carregar a pagina
-//Funciona com o layout feito por selects
-/*
 
-window.onload = populateDay(), populateYear(), populateMonth();
+setTimeout(() => {
+    //Chama as 3 funções para popular os campos de data ao carregar a pagina
+    //timeout pra carregar depois que o campo é criado
+    //nao funciona quando volta na pagina
+    populateDay(), populateYear(), populateMonth();
+  }, "100")
 
 
 function populateYear() {
@@ -75,4 +77,4 @@ function populateYear() {
             }
         };
 
-  */
+ 

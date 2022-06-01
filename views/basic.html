@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            
+            <form name="form">
+                <fieldset class="form">
+                    <legend for="fullname">Fullname *</legend>
+                    <input class="input" type="text" id="fullname" name="fullname" placeholder="Foo Bar" required  onkeyup="saveValue(this)">
+                    <legend for="nickname">Nickname</legend>
+                    <input class="input" type="text" id="nickname" name="nickname" placeholder="Juanito"  onkeyup="saveValue(this)">
+                    <div class="contact">
+                        <legend for="email">Email *</legend>
+                        <input class="input" type="email" id="email" name="email" placeholder="foo@bar.com" required  onkeyup="saveValue(this)">
+                        <legend for="phone">Phone</legend>
+                        <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this)">
+                    </div>
+                    <label class="label">Birthday *</label>
+                    <div class="birthday">
+                        <legend for="day">Day</legend>
+                        <select class="input" type="number" id="day" name="day"  required  onfocusout="getDate()" onkeyup="saveValue(this)">
+                        </select>
+                        <legend for="month">Month</legend>
+                        <select class="input" type="number" id="month" name="month" required  onfocusout="getDate()" onkeyup="saveValue(this)">
+                        </select>
+                        <legend for="year">Year</legend>
+                        <select class="input" type="number" id="year" name="year" required onfocusout="getDate()" onkeyup="saveValue(this)">
+                        </select>
+                        <legend for="age">Age</legend>
+                        <input class="input" type="text" readonly="readonly" id="age" onkeyup="saveValue(this)">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox"  onpress="saveValue(this)">
+                    <legend for="checkbox">I accept the terms and privacy</legend>
+                    </div> 
+                </fieldset>
+            </form>
+
+
+            <div class="button">
+                <button id="button">Next<img src="svg/arrow.svg"></i></button>
+            </div>
+        </div>
+
+    
+</body>
+
+</html>
