@@ -1,5 +1,5 @@
 var modal = document.getElementById("modal");
-var openModal = document.getElementById("openModal");
+var openModal = document.getElementById("finish");
 var cancel = document.getElementById("modalCancel")
 
 openModal.onclick = function() {
