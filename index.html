@@ -24,9 +24,12 @@
             <form name="form">
                 <fieldset class="form">
                     <legend for="linkedIn">LinkedIn</legend>
+                    <span  id="erroUrlLink" class="invisible">Invalid URL</span>
                     <input class="input" type="text" id="linkedIn" name="linkedIn" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
                     <legend for="github">Github *</legend>
-                    <input class="input"type="text" id="github" name="github" onclick="isURL()" placeholder="https://github.com/foobar" required>
+                    <span id="erro-input" class="invisible">This is a required field!</span>
+                    <span id="erroUrlGit" class="invisible">Invalid URL</span>
+                    <input class="input"type="text" id="github" name="github" placeholder="https://github.com/foobar" required>
                 </fieldset>
             </form>
             
@@ -41,7 +44,7 @@
         </div>
         
     </header>
-
+    
     <script src="js/validate-url.js"></script>
 </body>
 </html>

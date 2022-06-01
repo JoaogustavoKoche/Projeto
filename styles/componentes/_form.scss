@@ -13,6 +13,11 @@
             margin-bottom: 5%;
             padding-left: 3%;
         }
+
+        span{
+            color: rgb(230, 62, 62);
+            font-size: 12px;
+        }
     }
 
     .button{
@@ -24,7 +29,7 @@
             text-decoration: none;
 
             #button{
-                background: #074EE8;
+                background: #5d87e2;
                 border-radius: 4px;
                 display: flex;
                 flex-direction: row;
@@ -45,6 +50,10 @@
     }
 
     .errorInput{
-        border: 2px solid rgb(207, 53, 53) !important;
+        border: 2px solid rgb(230, 62, 62) !important;
+    }
+
+    .invisible {
+        display: none;
     }
 }

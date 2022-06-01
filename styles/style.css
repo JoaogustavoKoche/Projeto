@@ -54,6 +54,11 @@
   padding-left: 3%;
 }
 
+.container .form span {
+  color: #e63e3e;
+  font-size: 12px;
+}
+
 .container .button {
   position: absolute;
   bottom: 0;
@@ -66,7 +71,7 @@
 }
 
 .container .button a #button {
-  background: #074EE8;
+  background: #5d87e2;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +99,10 @@
 }
 
 .container .errorInput {
-  border: 2px solid #cf3535 !important;
+  border: 2px solid #e63e3e !important;
+}
+
+.container .invisible {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
