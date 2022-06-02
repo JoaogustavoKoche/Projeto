@@ -32,24 +32,26 @@
                         <legend for="email">Email *</legend>
                         <input class="input" type="email" id="email" name="email" placeholder="foo@bar.com" required  onkeyup="saveValue(this)">
                         <legend for="phone">Phone</legend>
-                        <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this)">
+                        <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this), phoneMask(event)" maxlength="15">
                     </div>
                     <label class="label">Birthday *</label>
-                    <div class="birthday">
+                    <span id="invalidDate" class="invisible">Invalid date</span>
+                    <div class="birthday" id="birthday">
                         <legend for="day">Day</legend>
-                        <select class="input" type="number" id="day" name="day"  required  onchange="saveValue(this)">
-                            <option>1</option>
-                        </select>
+                        <input maxlength="2" class="input" type="number" id="day" name="day" list="days" required  onchange="saveValue(this)">
+                        <datalist id="days">
+                          </datalist>
                         <legend for="month">Month</legend>
-                        <select class="input" type="number" id="month" name="month" required  onchange="saveValue(this)">
-                            <option>1</option>
-                        </select>
+                        <input class="input" type="number" id="month" name="month" list="months" required onchange="saveValue(this)">   
+                            <datalist id="months">
+                              </datalist>
                         <legend for="year">Year</legend>
-                        <select class="input" type="number" id="year" name="year" required  onchange="saveValue(this)">
-                            <option>1991</option>
-                        </select>
+                        <input class="input" type="number" id="year" name="year" list="years" required onchange="saveValue(this)">
+                            <datalist id="years">
+                              </datalist>
                         <legend for="age">Age</legend>
-                        <input class="input" type="text" readonly="readonly"  onchange="saveValue(this)">
+                        <input class="input" type="text" readonly="readonly" id="age" onchange="saveValue(this)">
+                        
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="checkbox" name="checkbox"  onpress="saveValue(this)">
@@ -60,14 +62,17 @@
 
 
             <div class="button">
-                <button id="button">Next<img src="svg/arrow.svg"></i></button>
+                <button id="button" onclick="validateForm()">Next<img src="svg/arrow.svg"></i></button>
             </div>
         </div>
-
     </header>
 </body>
 
+
+<script src="js/validate-age.js"></script>
+<script src="js/phone-mask.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/storage1.js"></script>
+<script src="js/validate-form.js"></script>
 
 </html>
