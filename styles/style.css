@@ -449,4 +449,88 @@
     width: 40%;
   }
 }
+
+.top {
+  margin: 0 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top .title {
+  margin-top: 10%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.top .add {
+  margin-top: 10%;
+  height: 40px;
+  width: 79px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: 'Nunito';
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: none;
+  background-color: #074EE8;
+  color: white;
+  text-decoration: none;
+}
+
+.top .add svg {
+  margin-right: 6px;
+}
+
+.teamList {
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+
+.teamList legend {
+  font-size: 14;
+  font-family: 'Nunito', sans-serif;
+  color: #074EE8;
+}
+
+.teamList p {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding-left: 11px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */

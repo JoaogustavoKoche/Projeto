@@ -3,6 +3,8 @@ document.querySelector('#nickname').value = getSavedValue("nickname");
 document.querySelector('#email').value = getSavedValue("email");
 document.querySelector('#phone').value = getSavedValue("phone");
 
+
+
 function saveValue(e) {
     let id = e.id;
     let val = e.value;
@@ -15,7 +17,3 @@ function getSavedValue(v) {
     }
     return localStorage.getItem(v);
 }
-
-
-
-

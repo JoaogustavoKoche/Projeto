@@ -31,16 +31,16 @@
                     <label class="label">Birthday *</label>
                     <div class="birthday">
                         <legend for="day">Day</legend>
-                        <select class="input" type="number" id="day" name="day"  required  onfocusout="getDate()" onkeyup="saveValue(this)">
+                        <select class="input" type="number" id="day" name="day"  required  onfocusout="getDate()" onchange="saveValue(this)">
                         </select>
                         <legend for="month">Month</legend>
-                        <select class="input" type="number" id="month" name="month" required  onfocusout="getDate()" onkeyup="saveValue(this)">
+                        <select class="input" type="number" id="month" name="month" required  onfocusout="getDate()" onchange="saveValue(this)">
                         </select>
                         <legend for="year">Year</legend>
-                        <select class="input" type="number" id="year" name="year" required onfocusout="getDate()" onkeyup="saveValue(this)">
+                        <select class="input" type="number" id="year" name="year" required onfocusout="getDate()" onchange="saveValue(this)">
                         </select>
                         <legend for="age">Age</legend>
-                        <input class="input" type="text" readonly="readonly" id="age" onkeyup="saveValue(this)">
+                        <input class="input" type="text" readonly="readonly" id="age" onchange="saveValue(this)">
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="checkbox" name="checkbox"  onpress="saveValue(this)">

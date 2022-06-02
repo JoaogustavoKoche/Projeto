@@ -3,10 +3,24 @@ document.querySelector('#team').value = getSavedValue("team");
 document.querySelector('#institution').value = getSavedValue("institution");
 document.querySelector('#graduation').value = getSavedValue("graduation");
 
-let dados = JSON.parse(localStorage.getItem('dados')) || [];
+;
 
 function saveCertificates(e) {
-    localStorage.setItem('dados', JSON.stringify(dados));
+    var certificate = {
+        1: "",
+        2: "",
+        3: "",
+        4: "",
+        5: "",
+    };
+
+    for (let i = 1; i < 6; i++) {
+        certificate[i] = document.querySelector('#certificates').value
+    }
+
+    
+    localStorage.setItem('certificate', JSON.stringify(certificate));
+
 }
 
 
