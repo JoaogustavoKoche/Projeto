@@ -54,11 +54,12 @@ table {
 
 .container {
   margin: 0 8%;
+  max-width: 768px;
 }
 
 .container .title {
-  margin-top: 10%;
-  font-family: 'Inter', sans-serif;
+  padding-top: 56px;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1em;
 }
@@ -73,22 +74,22 @@ table {
 }
 
 .container .subtitle {
-  margin-top: 8%;
+  margin-top: 33px;
   width: 100%;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border: none;
-  border-bottom: 2px solid #767676;
+  border-bottom: 2px solid #AAAAAA;
   padding-bottom: 2%;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
-.container .active {
+.container .subtitle.active {
   margin-top: 8%;
   width: 100%;
   border-color: #074EE8;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   color: #074EE8;
   border: none;
   padding-bottom: 2%;
@@ -101,9 +102,9 @@ table {
   -webkit-box-flex: 0;
       -ms-flex: 0 1;
           flex: 0 1;
-  margin-top: 6%;
+  margin-top: 33px;
   font-family: "Nunito", sans-serif;
-  font-size: 0.7em;
+  font-size: 14px;
   line-height: 20px;
   color: #767676;
   /*.input:last-child {
@@ -250,7 +251,7 @@ table {
 .container .form .certificates #certificatesList li a {
   width: 40px;
   height: 36px;
-  background-color: white;
+  background-color: #FFFFFF;
   border: 2px solid #074EE8;
   color: #074EE8;
   text-decoration: none;
@@ -311,7 +312,7 @@ table {
           justify-content: space-evenly;
   border: none;
   background-color: #074EE8;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 

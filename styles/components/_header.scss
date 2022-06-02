@@ -1,44 +1,44 @@
-.container{
+.container {
     margin: 0 8%;
+    max-width: 768px;
 
-    .title{
-        margin-top: 10%;
-        font-family: 'Inter', sans-serif;
+    .title {
+        padding-top: 56px;
+        font-family: $title-font;
         font-weight: 600;
         font-size: 1em;
     }
 
-    .subtitles{
+    .subtitles {
         width: 100%;
         display: flex;
         justify-content: space-around;
     }
 
-    .subtitle{
-        margin-top: 8%;
+    .subtitle {
+        margin-top: 33px;
         width: 100%;
-        background-color: #FFF;
+        background-color: $surface;
         border: none;
-        border-bottom: 2px solid #767676;
+        border-bottom: 2px solid $input-border-color;
         padding-bottom: 2%;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        
+
+        &.active {
+            margin-top: 8%;
+            width: 100%;
+            border-color: $primary-color;
+            background-color: $surface;
+            color: $primary-color;
+            border: none;
+            padding-bottom: 2%;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            border-bottom: 3px solid;
+        }
     }
 
-    .active{
-        margin-top: 8%;
-        width: 100%;
-        border-color: #074EE8;
-        background-color: #FFF;
-        color: #074EE8;
-        border: none;
-        padding-bottom: 2%;
-        font-family: 'Nunito', sans-serif;
-        font-size: 16px;
-        border-bottom: 3px solid;
-    }
 
-    
 }
