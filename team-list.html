@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA Project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body onload="getData()">
+    <header>
+        <div class="top">
+            <h1 class="title">Team</h1>
+            <button class="add" onclick="window.location = 'index.html'">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+                Add
+            </button>
+        </div>          
+    </header>
+   <div class="teamList">
+        <legend for="fullnameList">Fullname</legend>
+        <p id="fullNameList"></p>
+        <legend for="nicknameList">Nickname</legend>
+        <p id="nicknameList"></p>
+        <legend for="emailList">Email</legend>
+        <p id="emailList"></p>
+        <legend for="phoneList">Phone</legend>
+        <p id="phoneList"></p>
+        <legend for="birthday">Birthday</legend>
+        <p id="birthday"></p>
+        <legend for="age">Age</legend>
+        <p id="age"></p>
+        <legend for="linkedin">Linkedin</legend>
+        <p id="linkedin"></p>
+        <legend for="github">Github</legend>
+        <p id="github"></p>
+        <legend for="cert">Certificates</legend>
+        <p id="cert"></p>
+        <p id="cert"></p>
+        <p id="cert"></p>
+        <p id="cert"></p>
+        <p id="cert"></p>
+        <legend for="teamName">Team Name</legend>
+        <p id="teamName"></p>
+        <legend for="institution">Institution</legend>
+        <p id="institution"></p>
+        <legend for="graduation">Graduation</legend>
+        <p id="graduation"></p>
+   </div>
+
+    
+</body>
+    <script src="js/highlight-header.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/storageList.js"></script>
+    <script src="js/storage2.js"></script>
+    <script src="js/storage3.js"></script>
+    <script src="js/validate-age.js"></script>
+    <script src="js/certificates.js"></script>
+    <script src="js/modal.js"></script>
+
+</html>

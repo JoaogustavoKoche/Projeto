@@ -37,19 +37,19 @@
                     <label class="label">Birthday *</label>
                     <div class="birthday">
                         <legend for="day">Day</legend>
-                        <select class="input" type="number" id="day" name="day"  required  onkeyup="saveValue(this)">
+                        <select class="input" type="number" id="day" name="day"  required  onchange="saveValue(this)">
                             <option>1</option>
                         </select>
                         <legend for="month">Month</legend>
-                        <select class="input" type="number" id="month" name="month" required  onkeyup="saveValue(this)">
+                        <select class="input" type="number" id="month" name="month" required  onchange="saveValue(this)">
                             <option>1</option>
                         </select>
                         <legend for="year">Year</legend>
-                        <select class="input" type="number" id="year" name="year" required  onkeyup="saveValue(this)">
+                        <select class="input" type="number" id="year" name="year" required  onchange="saveValue(this)">
                             <option>1991</option>
                         </select>
                         <legend for="age">Age</legend>
-                        <input class="input" type="text" readonly="readonly"  onkeyup="saveValue(this)">
+                        <input class="input" type="text" readonly="readonly"  onchange="saveValue(this)">
                     </div>
                     <div class="checkbox">
                         <input type="checkbox" id="checkbox" name="checkbox"  onpress="saveValue(this)">
@@ -67,6 +67,7 @@
     </header>
 </body>
 
+<script src="js/storage.js"></script>
 <script src="js/storage1.js"></script>
 
 </html>

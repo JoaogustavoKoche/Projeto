@@ -3,17 +3,22 @@ document.querySelector('#team').value = getSavedValue("team");
 document.querySelector('#institution').value = getSavedValue("institution");
 document.querySelector('#graduation').value = getSavedValue("graduation");
 
-function saveValue(e) {
-    let id = e.id;
-    let val = e.value;
-    localStorage.setItem(id, val);
-}
+function saveCertificates(e) {
+    var certificate = {
+        1: "",
+        2: "",
+        3: "",
+        4: "",
+        5: "",
+    };
 
-function getSavedValue(v) {
-    if(!localStorage.getItem(v)) {
-        return "";
+    for (let i = 1; i < 6; i++) {
+        certificate[i] = document.querySelector('#certificates').value
     }
-    return localStorage.getItem(v);
+
+    
+    localStorage.setItem('certificate', JSON.stringify(certificate));
+
 }
 
 
