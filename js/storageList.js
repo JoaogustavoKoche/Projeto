@@ -1,9 +1,7 @@
 
 function getData() {
     let fullnameList = document.querySelector("#fullNameList");
-    fullnameList.innerHTML = localStorage.getItem('fullname');
-    let nicknameList = document.querySelector("#nicknameList");
-    nicknameList.innerHTML = localStorage.getItem('nickname');
+    fullnameList.innerHTML = localStorage.getItem('fullname') + "(" + localStorage.getItem('nickname')+ ")";
     let emailList = document.querySelector("#emailList");
     emailList.innerHTML = localStorage.getItem('email');
     let phoneList = document.querySelector("#phoneList");
