@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA Project</title>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1 class="title">Team Sign Up</h1>
-            <div class="subtitle">
-                <button class="subtitles">Basic</button>
-                <button class="subtitles checked">Socials</button>
-                <button class="subtitles">Certificates</button>
-            </div>
 
-            <form name="form">
-                <fieldset class="form">
-                    <legend for="linkedIn">LinkedIn</legend>
-                    <input class="input" type="text" id="linkedIn" name="linkedIn" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
-                    <legend for="github">Github *</legend>
-                    <input class="input"type="text" id="github" name="github" onclick="isURL()" placeholder="https://github.com/foobar" required>
-                </fieldset>
-            </form>
-            
-        
-            <div class="button">
-                    <button id="button">Next<img src="svg/arrow.svg"></i></button>
-            </div>
+<body>
+
+    <div class="container">
+        <h1 class="title">Team Sign Up</h1>
+        <div class="subtitles">
+            <button class="subtitle">Basic</button>
+            <button class="subtitle checked">Socials</button>
+            <button class="subtitle">Certificates</button>
         </div>
-        <!--<div class="modal" id="modal">
+        <form name="form">
+            <fieldset class="form">
+                <legend for="linkedIn">LinkedIn</legend>
+                <input class="input" type="text" id="linkedIn" name="linkedIn"
+                    placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/">
+                <legend for="github">Github *</legend>
+                <input class="input" type="text" id="github" name="github" onclick="isURL()"
+                    placeholder="https://github.com/foobar" required>
+            </fieldset>
+        </form>
+
+
+        <div class="button">
+            <button id="button">Next<img src="svg/arrow.svg"></i></button>
+        </div>
+    </div>
+    <!--<div class="modal" id="modal">
             <div class="modalContent">
                 <p>Are you sure you want to confirm?</p>
                 <div class="modalButtons">
@@ -59,7 +61,6 @@
                 </div>
             </div>
         </div>-->
-        
-    </header>
 </body>
+
 </html>
