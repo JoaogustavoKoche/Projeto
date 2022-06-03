@@ -14,59 +14,59 @@
 </head>
 
 <body onload="getData()">
-    <header>
-        <div class="top">
-            <h1 class="title">Team</h1>
-            <button class="add" onclick="newUser()">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg> 
-                Add
-            </button>
-        </div>          
-    </header>
-   <div class="teamList">
-        <p id="fullNameList"></p>
-        <p id="emailList"></p>
-        <p id="phoneList"></p>
-        <div class="date">
-            <div class="birth">
-                <h4>Birthday</h4>
-                <p id="birthday"></p>
+    <div class="container">
+        <header>
+            <div class="top">
+                <h1 class="title">Team</h1>
+                <button class="add" onclick="newUser()">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                    Add
+                </button>
+            </div>          
+        </header>
+    <div class="teamList">
+            <p id="fullNameList"></p>
+            <p id="emailList"></p>
+            <p id="phoneList"></p>
+            <div class="date">
+                <div class="birth">
+                    <h4>Birthday</h4>
+                    <p id="birthday"></p>
+                </div>
+                <div class="age">
+                    <h4 for="age">Age</h4>
+                    <p id="age"></p>
+                </div>
+                <div class="team">
+                    <h4 for="teamName">Team Name</h4>
+                    <p id="teamName"></p>
+                </div>
             </div>
-            <div class="age">
-                <h4 for="age">Age</h4>
-                <p id="age"></p>
-            </div>
-            <div class="team">
-                <h4 for="teamName">Team Name</h4>
-                <p id="teamName"></p>
-            </div>
+            <h4 for="linkedin">Linkedin</h4>
+            <p id="linkedin"></p>
+            <h4 for="github">Github</h4>
+            <p id="github"></p>
+            <h4 for="cert">Certificates</h4>
+            <p id="cert0"></p>
+            <p id="cert1"></p>
+            <p id="cert2"></p>
+            <p id="cert3"></p>
+            <p id="cert4"></p>
+            <div class="graduation">
+                <div class="institution">
+                    <h4 for="institution">Institution</h4>
+                    <p id="institution"></p>
+                </div>
+                <div class="course">
+                    <h4 for="graduation">Graduation</h4>
+                    <p id="graduation"></p>
+                </div>
+            </div> 
         </div>
-        <h4 for="linkedin">Linkedin</h4>
-        <p id="linkedin"></p>
-        <h4 for="github">Github</h4>
-        <p id="github"></p>
-        <h4 for="cert">Certificates</h4>
-        <p id="cert0"></p>
-        <p id="cert1"></p>
-        <p id="cert2"></p>
-        <p id="cert3"></p>
-        <p id="cert4"></p>
-        <div class="graduation">
-            <div class="institution">
-                <h4 for="institution">Institution</h4>
-                <p id="institution"></p>
-            </div>
-            <div class="course">
-                <h4 for="graduation">Graduation</h4>
-                <p id="graduation"></p>
-            </div>
-        </div>
-        
-   </div>
-
+    </div>
     
 </body>
     <script src="js/storageList.js"></script>
