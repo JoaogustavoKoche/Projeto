@@ -33,25 +33,17 @@
                     <legend for="nickname">Nickname</legend>
                     <input class="input" type="text" id="nickname" name="nickname" placeholder="Juanito"  onkeyup="saveValue(this)">
                     <div class="contact">
-                        
+                        <div>
                             <legend for="email">Email *</legend>
                             <span id="erroEmail" class="invisible">This is a required field!</span>
                             <span id="erro-email" class="invisible">Invalid Email</span>
-
                             <input class="input" type="email" id="email" name="email" placeholder="foo@bar.com" required  onkeyup="saveValue(this)">
-<<<<<<< HEAD
-                     
-                    
-                       
-=======
                         </div>
-                        
-                        <div class="contact-phone">
->>>>>>> 7c7b8390c3d7f15413e70db58439d2838aef6f3e
-                            <legend for="phone">Phone</legend>
-                            <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this), phoneMask(event)" maxlength="15">
-                     
-                    </div>
+                            <div class="contact-phone">
+                                <legend for="phone">Phone</legend>
+                                <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this), phoneMask(event)" maxlength="15">
+                            </div>
+                        </div>
                     <label class="label">Birthday *</label>
                     <span id="invalidDate" class="invisible">Invalid date</span>
                     <div class="birthday" id="birthday">
