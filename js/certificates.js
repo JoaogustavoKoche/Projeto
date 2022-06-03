@@ -11,6 +11,7 @@ function loadCertificates() {
 
 function loadItem(i) {
     var ul = document.getElementById("certificatesList");
+    var certificate = document.getElementById("certificates");
     var li = document.createElement("li");
 
     
@@ -40,6 +41,7 @@ function loadItem(i) {
     li.appendChild(remove);
     ul.appendChild(li);
 
+    certificate.value = "";
 
 }
 
@@ -76,13 +78,11 @@ function addItem(){
     ul.appendChild(li);
 
 
-    //certificate.value = "";
+    certificate.value = "";
 }
 
 function removeItem(e){
     let list = document.querySelector('#certificatesList');
-    console.log("removendo");
-    console.log(e.name);
     list.removeChild(e.parentNode);
     localStorage.removeItem(e.name)
     
@@ -97,3 +97,4 @@ function edit(p) {
     }
 
 }
+

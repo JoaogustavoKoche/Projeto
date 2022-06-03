@@ -87,21 +87,31 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 93px;
+  gap: 0 5%;
+  width: 100%;
+}
+
+.container form .contact .contact-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 93px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 0 5%;
-}
-
-.container form .contact [type="email"] {
   width: 63.61%;
 }
 
-.container form .contact [type="tel"] {
+.container form .contact .contact-email .input {
+  margin-bottom: 4%;
+}
+
+.container form .contact .contact-phone {
   width: 31.23%;
 }
 
@@ -143,6 +153,10 @@
   color: #767676;
 }
 
+.container form .birthday .age legend {
+  margin-bottom: 3px;
+}
+
 .container form .checkbox {
   margin: 42px 0 50px 0;
   -webkit-box-sizing: border-box;
@@ -170,6 +184,32 @@
 
 .container form .certificates input {
   margin-bottom: 3.66%;
+  border: none;
+  outline: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 36px;
+}
+
+.container form .certificates .inputFav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: solid 2px #AAAAAA;
+  border-radius: 4px;
+  height: 36px;
+  margin-bottom: 3.66%;
+}
+
+.container form .certificates .inputFav #fav {
+  padding-right: 35px;
+  padding-top: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container form .certificates #certificatesList li {

@@ -63,8 +63,10 @@
                         <input class="input" type="tel" maxlength="4" id="year" name="year" list="years" required onchange="saveValue(this)">
                             <datalist id="years">
                                 </datalist>
-                        <legend for="age">Age</legend>
-                        <input class="input" type="text" readonly="readonly" id="age" onchange="saveValue(this)">
+                        <div class="age">
+                            <legend for="age">Age</legend>
+                            <input class="input" type="text" readonly="readonly" id="age" onfocus="saveValue(this)">
+                        </div>
                         
                     </div>
                     <div class="checkbox">

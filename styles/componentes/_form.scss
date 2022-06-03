@@ -27,25 +27,26 @@
         .contact {
             box-sizing: border-box;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             height: 93px;
-            flex-wrap: wrap;
             gap: 0 5%;
+            width: 100%;
             [type="email"] {
-                width: 63.61%;
+                //width: 100%;
             }
             [type="tel"]{
-                width: 31.23%;
+                //width: 100%;
             }
-
             .contact-email{
-
-
+                display: flex;
+                flex-direction: column;
+                width: 63.61%;
+                .input {
+                    margin-bottom: 4%;
+                }
             }
-
-
             .contact-phone{
-
+                width: 31.23%;
             }
         }
         .label{
@@ -69,6 +70,11 @@
             select {
                 color: #767676
             }
+            .age {
+                legend {
+                    margin-bottom: 3px;
+                }
+            }
         }
         .checkbox {
             margin: 42px 0 50px 0;
@@ -91,7 +97,28 @@
         .certificates {
             input {
                 margin-bottom: 3.66%;
+                border: none;
+                outline: none;
+                padding-top: 0;
+                padding-bottom: 0;
+                height: 36px;
             }
+            .inputFav {
+                display: flex;
+                flex-direction: row;
+                border: solid 2px #AAAAAA;
+                border-radius: 4px;
+                height: 36px;
+                margin-bottom: 3.66%;
+                #fav {
+                    padding-right: 35px;
+                    padding-top: 8px;
+                    //background-image: url('/svg/fav.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            
             #certificatesList {
                 li {
                     width: 100%;

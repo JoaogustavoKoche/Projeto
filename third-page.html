@@ -24,7 +24,12 @@
                 <div class="certificates" id="certificatesForm">
                     <legend for="certificates">Certificates</legend>
                     <span  id="erroUrlLink" class="invisible">Invalid URL</span>
-                    <input class="input" type="text" id="certificates" name="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" onkeyup="saveValue(this)" autofocus>
+                    <div class="inputFav">
+                        <input class="input" type="text" id="certificates" name="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" onkeyup="saveValue(this)" autofocus>
+                        <a id="fav" onclick="fav()" style="background-image: url('/svg/fav.svg')">
+                            
+                        </a>
+                    </div>
                     <div>
                         <ul id="certificatesList">
                             
@@ -103,5 +108,6 @@
     <script src="js/storage.js"></script>
     <script src="js/storage3.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/fav.js"></script>
 </body>
 </html>
