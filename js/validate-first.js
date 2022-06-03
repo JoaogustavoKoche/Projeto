@@ -2,7 +2,6 @@
 const inputName = document.getElementById("fullname");
 inputName.addEventListener("change", validateName);
 
-
 function validateName(){
 
     var expression = /^[A-ZÀ-Ÿ][A-zÀ-ÿ']+\s([A-zÀ-ÿ']\s?)*[A-ZÀ-Ÿ][A-zÀ-ÿ']+$/;
