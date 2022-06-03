@@ -1,7 +1,7 @@
 const validCheckbox = document.getElementById('checkbox');
 const erroCheckbox = document.querySelector("#invalidCheckbox");
 
-
+var checkboxOk;
 
 function validateCheckbox() {
     if (!document.getElementById('checkbox').checked) {
@@ -10,6 +10,7 @@ function validateCheckbox() {
         return false;
     } 
     
+    checkboxOk = true;
     validCheckbox.classList.remove("errorInput");
     erroCheckbox.classList.add("invisible");
 }
