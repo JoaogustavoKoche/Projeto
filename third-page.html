@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="loadCertificates()">
     <header>
         <div class="container">
             <h1 class="title">Team Sign Up</h1>
@@ -27,6 +27,7 @@
                     <input class="input" type="text" id="certificates" name="certificates" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" onkeyup="saveValue(this)" autofocus>
                     <div>
                         <ul id="certificatesList">
+                            
                         </ul>
                     </div>
                     <div class="certificateButton">
