@@ -25,14 +25,28 @@
             <form name="form">
                 <fieldset class="form">
                     <legend for="fullname">Fullname *</legend>
+                    <span id="erro-input" class="invisible" >This is a required field!</span>
+                    <span id="erro-name" class="invisible" >Invalid Name</span>
+
                     <input class="input" type="text" id="fullname" name="fullname" placeholder="Foo Bar" required  onkeyup="saveValue(this)">
+
                     <legend for="nickname">Nickname</legend>
                     <input class="input" type="text" id="nickname" name="nickname" placeholder="Juanito"  onkeyup="saveValue(this)">
                     <div class="contact">
-                        <legend for="email">Email *</legend>
-                        <input class="input" type="email" id="email" name="email" placeholder="foo@bar.com" required  onkeyup="saveValue(this)">
-                        <legend for="phone">Phone</legend>
-                        <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this), phoneMask(event)" maxlength="15">
+                        <div class="contact-email">
+                            <legend for="email">Email *</legend>
+
+
+                            <span id="erroEmail" class="invisible">This is a required field!</span>
+                            <span id="erro-email" class="invisible">Invalid Email</span>
+
+                            <input class="input" type="email" id="email" name="email" placeholder="foo@bar.com" required  onkeyup="saveValue(this)">
+                        </div>
+                    
+                        <div class="contact-phone">
+                            <legend for="phone">Phone</legend>
+                            <input class="input" type="tel" id="phone" name="phone" placeholder="(83) 00000-0000"  onkeyup="saveValue(this), phoneMask(event)" maxlength="15">
+                        </div>
                     </div>
                     <label class="label">Birthday *</label>
                     <span id="invalidDate" class="invisible">Invalid date</span>
@@ -40,15 +54,15 @@
                         <legend for="day">Day</legend>
                         <input class="input" type="tel" maxlength="2" id="day" name="day" list="days" required  onchange="saveValue(this)">
                         <datalist id="days">
-                          </datalist>
+                            </datalist>
                         <legend for="month">Month</legend>
                         <input class="input" type="tel" maxlength="2" id="month" name="month" list="months" required onchange="saveValue(this)">   
                             <datalist id="months">
-                              </datalist>
+                                </datalist>
                         <legend for="year">Year</legend>
                         <input class="input" type="tel" maxlength="4" id="year" name="year" list="years" required onchange="saveValue(this)">
                             <datalist id="years">
-                              </datalist>
+                                </datalist>
                         <legend for="age">Age</legend>
                         <input class="input" type="text" readonly="readonly" id="age" onchange="saveValue(this)">
                         
@@ -74,5 +88,6 @@
 <script src="js/storage.js"></script>
 <script src="js/storage1.js"></script>
 <script src="js/validate-form.js"></script>
+<script src="js/validate-first.js"></script>
 
 </html>
