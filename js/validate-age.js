@@ -1,3 +1,5 @@
+//ao clicar em next ele calcula a idade mesmo sem nada informado
+
 function getDate(){
     var day = document.querySelector("#day").value;
     var month = document.querySelector("#month").value;
@@ -10,19 +12,54 @@ function getDate(){
     document.querySelector('#age').value = age;
 }
 
-function isValid(){
+const birthday = document.getElementById('birthday');
+const errorBirthday = document.querySelector("#invalidDate");
+
+function setDate(){
+
+    
+}
+function isDateValid(){
     //validar dias em fevereiro, lembrando que o valor é 1 pois a contagem começa do 0
     if(month.value == 1 && day.value > 29){
+        setErrorAlert();
         return false;
     }
 
     //testar se mes tem 30 ou 31 dias
     if(thirtyDaysMonth()){
+        setErrorAlert();
         return false;
     }
 
+    if(day.value < 1  || month.value < 1 || year.value < 1900){
+        setErrorAlert();
+        return false;
+    }
+
+    if(day.value > 31 || month.value > 12){
+        setErrorAlert();
+        return false;
+    }
+
+unsetErrorAlert();
 }
 
+
+function setErrorAlert(){
+        day.classList.add("errorInput");
+        year.classList.add("errorInput");
+        month.classList.add("errorInput");
+        errorBirthday.classList.remove("invisible");
+}
+
+
+function unsetErrorAlert(){
+        day.classList.remove("errorInput");
+        year.classList.remove("errorInput");
+        month.classList.remove("errorInput");
+        errorBirthday.classList.add("invisible");
+}
 //verificar se o mes tem 30 dias
 function thirtyDaysMonth(){
     //meses com 30 dias
@@ -35,16 +72,15 @@ function thirtyDaysMonth(){
 
 //Chama as 3 funções para popular os campos de data ao carregar a pagina
 //Funciona com o layout feito por selects
-/*
 
-window.onload = populateDay(), populateYear(), populateMonth();
+
+populateDay(), populateYear(), populateMonth();
 
 
 function populateYear() {
-    var year = document.getElementById("year");
-    //-6 para gerar a data ate o ano atual -6, porem o usuario consegue passar com no minimo 5 anos
-    var currentYear = (new Date()).getFullYear() - 6;
-        for (var i = 1940; i <= currentYear; i++) {
+    var year = document.getElementById("years");
+    var currentYear = (new Date()).getFullYear();
+        for (var i = 1900; i <= currentYear; i++) {
             var option = document.createElement("option");
             option.innerHTML = i;
             option.value = i;
@@ -54,7 +90,7 @@ function populateYear() {
 
     //Falta adicionar o 0 na frente dos números de dia/mes
     function populateDay() {
-        var day = document.getElementById("day");
+        var day = document.getElementById("days");
             for (var i = 01; i <= 31; i++) {
                 var option = document.createElement("option");
                 option.innerHTML = i;
@@ -65,14 +101,12 @@ function populateYear() {
         };
 
     function populateMonth() {
-        var month = document.getElementById("month");
+        var month = document.getElementById("months");
              for (var i = 01; i <= 12; i++) {
                 var option = document.createElement("option");
                 option.innerHTML = i;
-                //Mes vai de 0 a 11, por isso a option é -1 o valor que exibe
-                option.value = i-1;
+                option.value = i;
                 month.appendChild(option);
             }
         };
 
-  */

@@ -2,7 +2,7 @@
 //<input id="telefone" onkeyup="phoneMask(event)" maxlength="15"/>
   
   function phoneMask(event) {
-    var value = document.getElementById("telefone").attributes[0].ownerElement['value'];
+    var value = document.getElementById("phone").attributes[0].ownerElement['value'];
     var maskedValue = value.replace(/\D/g, "");
     maskedValue = maskedValue.replace(/^0/, "");
     if (maskedValue.length > 10) {
@@ -19,5 +19,5 @@
         maskedValue = maskedValue.replace(/^(\d*)/, "($1");
       }
     }
-    document.getElementById("telefone").attributes[0].ownerElement['value'] = maskedValue;
+    document.getElementById("phone").attributes[0].ownerElement['value'] = maskedValue;
   }
