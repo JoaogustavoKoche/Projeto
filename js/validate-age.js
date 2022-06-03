@@ -1,27 +1,32 @@
 //ao clicar em next ele calcula a idade mesmo sem nada informado
-
 function getDate(){
     var day = document.querySelector("#day").value;
     var month = document.querySelector("#month").value;
     var year = document.querySelector("#year").value;
     var userBirthday = new Date(year, month, day);
     var today = new Date();
-    var age = today - userBirthday;
+    age = today - userBirthday;
     //converte a diferenca pra anos
-    age = Math.floor(age / 31536000000);
+    var age = Math.floor(age / 31536000000);
+    if(age < 1 && !isDateValid()){
+        setErrorAlert();
+        document.querySelector('#age').value = '';
+        return false;
+        
+    }
+    unsetErrorAlert();
     document.querySelector('#age').value = age;
 }
 
 const birthday = document.getElementById('birthday');
 const errorBirthday = document.querySelector("#invalidDate");
 
-function setDate(){
 
-    
-}
+var dateOk = false;
 function isDateValid(){
     //validar dias em fevereiro, lembrando que o valor é 1 pois a contagem começa do 0
-    if(month.value == 1 && day.value > 29){
+    
+    if(month.value == 2 && day.value > 29){
         setErrorAlert();
         return false;
     }
@@ -40,8 +45,10 @@ function isDateValid(){
     if(day.value > 31 || month.value > 12){
         setErrorAlert();
         return false;
+        
     }
 
+dateOk = true;
 unsetErrorAlert();
 }
 
@@ -63,7 +70,7 @@ function unsetErrorAlert(){
 //verificar se o mes tem 30 dias
 function thirtyDaysMonth(){
     //meses com 30 dias
-    if((month.value == 3 || month.value == 5 || month.value == 8|| month.value == 10) && day.value > 30){  
+    if((month.value == 4 || month.value == 6 || month.value == 9|| month.value == 11) && day.value > 30){  
         return true;
     }
     return false;
