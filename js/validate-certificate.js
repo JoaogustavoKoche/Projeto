@@ -1,4 +1,4 @@
-const button = document.getElementById('finish')
+
 
 
 
@@ -11,6 +11,46 @@ inputLink.addEventListener("change", validateLink);
 inputTeam.addEventListener("change", validateTeam);
 inputInst.addEventListener("change", validateInstitution);
 inputGrad.addEventListener("change", validateGraduation);
+
+var validGrad;
+var validInst;
+var validTeam;
+var verify;
+var verifyReg;
+
+const button = document.getElementById('finish')
+document.getElementById('finish').style.backgroundColor = '#5d87e2';
+button.disabled = true;
+
+inputInst.addEventListener("change", stateHandle);
+inputGrad.addEventListener("change", stateHandle);
+inputInst.addEventListener("change", stateHandle);
+
+
+function stateHandle() {
+
+    if(validGrad == true && validInst == true){
+        button.disabled = false;
+        document.getElementById('finish').style.backgroundColor = '#074EE8';
+    }else{
+        button.disabled = true;
+        document.getElementById('finish').style.backgroundColor = '#5d87e2';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,24 +84,28 @@ function validateTeam(){
     var errourl = document.querySelector("#erro-teamUrl");
     const link = document.getElementById('team')
 
+
+
     if(link.value == ''){
         link.classList.add("errorInput")
         erroteam.classList.remove("invisible")
         errourl.classList.add("invisible")
 
-
+        verify = false;
     }else{
         link.classList.remove("errorInput")
-
         if (link.value.match(regex)) {
             link.classList.remove("errorInput")
             errourl.classList.add("invisible")
+            verifyReg = true;
             
         } else {
             link.classList.add("errorInput")
             errourl.classList.remove("invisible")
+            verifyReg = false;
         }
         erroteam.classList.add("invisible")
+        verify = true;
     }
 }
 
@@ -76,12 +120,12 @@ function validateInstitution(){
         link.classList.add("errorInput")
         erroteam.classList.remove("invisible")
 
-
+        validInst = false;
     }else{
         link.classList.remove("errorInput")
         erroteam.classList.add("invisible")
 
-
+        validInst = true;
     }
 }
 
@@ -96,12 +140,13 @@ function validateGraduation(){
     if(link.value == ''){
         link.classList.add("errorInput")
         errograd.classList.remove("invisible")
+        
+        validGrad = false;
 
     }else{
         link.classList.remove("errorInput")
         errograd.classList.add("invisible")
-
-
+        validGrad = true;
     }
 }
 

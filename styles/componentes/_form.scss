@@ -25,10 +25,18 @@
             font-size: 12px;
         }
         .contact {
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
             height: 93px;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
             gap: 0 5%;
             width: 100%;
             [type="email"] {
@@ -36,17 +44,6 @@
             }
             [type="tel"]{
                 //width: 100%;
-            }
-            .contact-email{
-                display: flex;
-                flex-direction: column;
-                width: 63.61%;
-                .input {
-                    margin-bottom: 4%;
-                }
-            }
-            .contact-phone{
-                width: 31.23%;
             }
         }
         .label{
