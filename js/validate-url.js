@@ -25,6 +25,7 @@ function stateHandle() {
         erroinput.classList.remove("invisible")
         errogit.classList.add("invisible")
         document.getElementById('buttonn').style.backgroundColor = '#5d87e2';
+        document.getElementById('buttonn').setAttribute('disabled', true);
 
     } else {
             
@@ -32,11 +33,13 @@ function stateHandle() {
             button.disabled = false;
             document.getElementById('buttonn').style.backgroundColor = '#074EE8';
             errogit.classList.add("invisible")
+            document.getElementById('buttonn').removeAttribute('disabled');
         } else {
             button.disabled = true;
             errogit.classList.remove("invisible")
             erroinput.classList.add("invisible")
             document.getElementById('buttonn').style.backgroundColor = '#5d87e2';
+            document.getElementById('buttonn').setAttribute('disabled', true);
         }
     }
 }
