@@ -44,14 +44,20 @@
                 </div>
                 <div>
                     <legend for="team">Team Name *</legend>
-                    <span id="erro-input" class="invisible">This is a required field!</span>
+                    <span id="erro-team" class="invisible">This is a required field!</span>
+                    <span id="erro-teamUrl" class="invisible">Invalid URL</span>
                     <input class="input"type="text" id="team" name="team" placeholder="https://www.linkedin.com/in/foo-bar-3a0560104/" required onkeyup="saveValue(this)">
+
                     <legend for="institution">Institution *</legend>
-                    <span id="erro-input" class="invisible">This is a required field!</span>
+                    <span id="erro-inst" class="invisible">This is a required field!</span>
                     <input class="input"type="text" id="institution" name="institution" placeholder="Universidade Federal da Paraíba" required onkeyup="saveValue(this)">
+                    
                     <legend for="graduation">Graduation *</legend>
-                    <span id="erro-input" class="invisible">This is a required field!</span>
+                    <span id="erro-grad" class="invisible">This is a required field!</span>
                     <input class="input"type="text" id="graduation" name="graduation" placeholder="Ciências da Computação" required onkeyup="saveValue(this)">
+
+
+
                 </div>
             </form>
             
@@ -91,7 +97,7 @@
             </div>
         </div>
     </header>
-    <script src="js/validate-url.js"></script>
+    <script src="js/validate-certificate.js"></script>
     <script src="js/certificates.js"></script>
     <script src="js/storage.js"></script>
     <script src="js/storage3.js"></script>
