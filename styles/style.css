@@ -100,11 +100,11 @@
 }
 
 .container form .contact .contact-email {
-  width: 73%;
+  width: 67%;
 }
 
 .container form .contact .contact-phone {
-  width: 22%;
+  width: 28%;
 }
 
 .container form .label {
@@ -146,7 +146,7 @@
 }
 
 .container form .birthday .age legend {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .container form .checkbox {
