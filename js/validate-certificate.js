@@ -62,7 +62,6 @@ function validateTeam(){
             errourl.classList.remove("invisible")
         }
         erroteam.classList.add("invisible")
-
     }
 }
 
