@@ -16,6 +16,7 @@ function getDate(){
     }
     unsetErrorAlert();
     document.querySelector('#age').value = age;
+    localStorage.setItem('age', age);
 }
 
 const birthday = document.getElementById('birthday');
