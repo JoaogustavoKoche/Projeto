@@ -1,9 +1,11 @@
 .container {
-  margin: 0 8%;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 8.91% 0 7.61%;
 }
 
 .container .title {
-  margin-top: 10%;
+  padding-top: 4.33%;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1em;
@@ -57,6 +59,9 @@
   font-size: 0.7em;
   line-height: 20px;
   color: #767676;
+  /*.input:last-child {
+            margin-bottom: 11%;
+        }*/
 }
 
 .container form .input {
@@ -70,10 +75,6 @@
   border-radius: 4px;
   margin-bottom: 5%;
   padding-left: 11px;
-}
-
-.container form .input:last-child {
-  margin-bottom: 11%;
 }
 
 .container form span {
@@ -137,7 +138,7 @@
 }
 
 .container form .birthday * {
-  width: 88.7%;
+  width: 90.7%;
 }
 
 .container form .birthday select {
@@ -352,7 +353,38 @@
   margin-left: 6px;
 }
 
+@media (min-width: 769px) {
+  body {
+    background-color: #E0EAFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    background-color: #FFF;
+    padding: 0 55px 0 47px;
+    width: 768px;
+    min-height: 100vh;
+  }
+  .container .form .contact {
+    height: 100px;
+  }
+  .container .form .checkbox {
+    margin: 20px 0;
+  }
+  .container #buttonn {
+    margin-right: 55px;
+  }
+}
+
 .container .button {
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,6 +402,12 @@
   border-radius: 4px;
   color: #FFFFFF;
   font-size: 16px;
+}
+
+.container #buttonn {
+  position: absolute;
+  right: 0;
+  bottom: 8%;
 }
 
 .modal {

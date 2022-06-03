@@ -17,9 +17,9 @@
             margin-bottom: 5%;
             padding-left: 11px;
         }
-        .input:last-child {
+        /*.input:last-child {
             margin-bottom: 11%;
-        }
+        }*/
         span{
             color: rgb(230, 62, 62);
             font-size: 12px;
@@ -72,7 +72,7 @@
             width: 25%;
             flex: 1 1;
             * {
-                width: 88.7%;
+                width: 90.7%;
             }
             select {
                 color: #767676
@@ -237,4 +237,31 @@
 
     
     
+}
+@media (min-width: 769px) {
+    body {
+        background-color: #E0EAFF;
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        box-sizing: border-box;
+        margin: 0;
+        background-color: #FFF;
+        padding: 0 55px 0 47px;
+        width: 768px;
+        min-height: 100vh;
+        .form {
+            .contact{
+                height: 100px;
+            }
+            .checkbox{
+                margin: 20px 0;
+            }
+        }
+        #buttonn{
+            margin-right: 55px;
+        }
+        
+    }
 }
