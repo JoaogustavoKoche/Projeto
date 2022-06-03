@@ -19,8 +19,10 @@ function setDate(){
 
     
 }
+var dateOk = false;
 function isDateValid(){
     //validar dias em fevereiro, lembrando que o valor é 1 pois a contagem começa do 0
+    
     if(month.value == 1 && day.value > 29){
         setErrorAlert();
         return false;
@@ -41,7 +43,7 @@ function isDateValid(){
         setErrorAlert();
         return false;
     }
-
+dateOk = true;
 unsetErrorAlert();
 }
 
