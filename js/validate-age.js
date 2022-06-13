@@ -113,7 +113,7 @@ function thirtyDaysMonth(){
 //Chama as 3 funções para popular os campos de data ao carregar a pagina
 //Funciona com o layout feito por selects
 
-/*
+
 populateDay(), populateYear(), populateMonth();
 
 
@@ -149,4 +149,4 @@ function populateYear() {
                 month.appendChild(option);
             }
         };
-*/
+
