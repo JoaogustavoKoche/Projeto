@@ -1,14 +1,13 @@
 function validateForm(){
-        getDate();
         isDateValid();
-        validateCheckbox();
-        validateEmail();
-        validateName();
+        //validateCheckbox();
+        //validateEmail();
+        //validateName();
 
         //chama a variavel em validate-age e validate-checkbox pra ver se ela é verdadeira e então redirecionar
-        if(dateOk && checkboxOk){     
-        window.location.href = "second-page.html";
-      }  
+        //if(dateOk && checkboxOk){     
+        //window.location.href = "second-page.html";
+      //}  
 }
 
 

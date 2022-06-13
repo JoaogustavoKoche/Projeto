@@ -1,13 +1,33 @@
 //ao clicar em next ele calcula a idade mesmo sem nada informado
-function getDate(){
+function getAge(){
     var day = document.querySelector("#day").value;
     var month = document.querySelector("#month").value;
     var year = document.querySelector("#year").value;
-    var userBirthday = new Date(year, month, day);
+    
+}
+
+function calculateAge(){
+    var userBirthday = new Date(year.value, month.value, day.value);
     var today = new Date();
-    age = today - userBirthday;
-    //converte a diferenca pra anos
-    var age = Math.floor(age / 31536000000);
+    var age = today - userBirthday;
+    age = Math.floor(age / 31536000000);
+    console.log(age);
+    return age;
+    
+}
+
+
+
+getAge();
+calculateAge();
+
+
+
+
+
+
+/*
+    
     if(age < 1 && !isDateValid()){
         setErrorAlert();
         document.querySelector('#age').value = '';
@@ -15,9 +35,10 @@ function getDate(){
         
     }
     unsetErrorAlert();
-    document.querySelector('#age').value = age;
-    localStorage.setItem('age', age);
+    
+    
 }
+*/
 
 const birthday = document.getElementById('birthday');
 const errorBirthday = document.querySelector("#invalidDate");
@@ -26,31 +47,42 @@ const errorBirthday = document.querySelector("#invalidDate");
 var dateOk = false;
 function isDateValid(){
     //validar dias em fevereiro, lembrando que o valor é 1 pois a contagem começa do 0
-    
+    if(calculateAge() == -1){
+        setErrorAlert();
+        document.querySelector('#age').value = '';
+        return false;
+    }
+
     if(month.value == 2 && day.value > 29){
         setErrorAlert();
+        document.querySelector('#age').value = '';
         return false;
     }
 
     //testar se mes tem 30 ou 31 dias
     if(thirtyDaysMonth()){
         setErrorAlert();
+        document.querySelector('#age').value = '';
         return false;
     }
 
     if(day.value < 1  || month.value < 1 || year.value < 1900){
         setErrorAlert();
+        document.querySelector('#age').value = '';
         return false;
     }
 
     if(day.value > 31 || month.value > 12){
         setErrorAlert();
+        document.querySelector('#age').value = '';
         return false;
         
     }
-
-dateOk = true;
-unsetErrorAlert();
+    console.log(age.value);
+    document.querySelector('#age').value = calculateAge();
+    localStorage.setItem('age', calculateAge());
+    dateOk = true;
+    unsetErrorAlert();
 }
 
 
@@ -81,7 +113,7 @@ function thirtyDaysMonth(){
 //Chama as 3 funções para popular os campos de data ao carregar a pagina
 //Funciona com o layout feito por selects
 
-
+/*
 populateDay(), populateYear(), populateMonth();
 
 
@@ -117,4 +149,4 @@ function populateYear() {
                 month.appendChild(option);
             }
         };
-
+*/
